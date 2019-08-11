@@ -1,0 +1,5 @@
+b = bytes()
+    b = bytes(range(65, 90))  # b'ABCDEFGHIJKLMNOPQRSTUVWXY'
+    b = bytes(10)
+    b = bytes('hello', 'utf-8')
+    b = bytes('中文', 'utf-8')
