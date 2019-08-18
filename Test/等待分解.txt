@@ -1,0 +1,9 @@
+UTF-8 的一大优势是，不管设备使用哪种字节序，生成的字节序列始终一致，因此不需要 BOM
+UTF-8 编码的 U+FEFF 字符是一个三字节序列： b'\xef\xbb\xbf'。
+
+为你提供没有前导ZERO WIDTH NO-BREAK SPACE 字符的真正文本
+
+
+处理文本文件
+
+例如，在 Django 中，视图应该输出 Unicode 字符串；Django 会负责把响应编码成字节序列，而且默认使用 UTF-8 编码。
